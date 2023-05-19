@@ -13,6 +13,7 @@ body {
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        min-width: 100vw;
         font-family: 'Open Sans', sans-serif;
         color: #ff914d;
 }
@@ -31,6 +32,7 @@ span {
 
 h3 {
     font-size: 12px;
+    margin-bottom: 5px;
 }
 
 h4 {
@@ -52,7 +54,6 @@ h4 {
 
 .form img{
     display: flex;
-    align-items: center;
     width: 100%;
     margin-bottom: 10px;
 }
@@ -89,6 +90,11 @@ h4 {
     font-weight: bold;
 }
 
+.btn:hover {
+    background-color: #ff914d;
+    color: white;
+}
+
 .social-media {
     display: flex;
     justify-content: space-around;
@@ -104,9 +110,11 @@ h4 {
     margin-top: 10px;
 }
 
-@media (max-width: 888px) {
-
-    .container {
-        padding: 2%;
+@media (max-width: 760px) {
+    .form{
+        width: 100vw;
+        height: 100vh;
+        padding: 0px 15px 0 15px;
+        border-radius: 0;
     }
 }
